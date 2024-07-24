@@ -123,7 +123,7 @@ const handleListItemClick = (eventId:number)=>{
                 .map((event)=>{
                     return(
                         <li className="liked-events_event" key={event?.id} onClick={()=>{
-                            handleListItemClick(event.id);
+                            handleListItemClick(event?.id);
                         }}>
                         <h3>{event?.title}</h3>
                         </li>
